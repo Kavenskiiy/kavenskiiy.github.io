@@ -1,0 +1,64 @@
+body {
+  background-color: #7f7679;
+  text-align: center;
+}
+div { box-sizing: border-box; }
+.about {
+  width: 100%;
+    position: relative;
+
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.photo, .other {
+    text-align: center;
+	margin: 10px;
+	padding: 20px 10px;
+	display: inline-block;
+  background-color: grey;
+}
+.other {
+   border: 3px dotted #61bd62; 
+   }
+   hr {
+        border: 3px dotted #61bd62; 
+   }
+   p, strong, ul, li {
+       font-size: 14px;
+  text-align: center;
+}
+
+.push {
+  font-size: 14px;
+  list-style: none;
+
+}
+.push li {
+  position: relative;
+  padding: 25px 0 15px 0px;
+  cursor: pointer;
+}
+.push li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 20%;
+  background: #4F5151;
+  content: "";
+  left: 0;
+  transition: .3s ease-in-out;
+  top: 27px;
+}
+.push li:after {
+  position: absolute;
+  border-left: 1px dotted #4F5151;
+  width: 1px;
+  bottom: -12px;
+  content: "";
+  left: 3px;
+  top: 48px;
+}
+.push li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+.push li:last-child:after {content: none;}
